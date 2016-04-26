@@ -9,5 +9,9 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+  javaJpa,
+  "org.hibernate" % "hibernate-entitymanager" % "5.1.0.Final",
+  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41"
 )
+PlayKeys.externalizeResources := false
